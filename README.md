@@ -103,7 +103,7 @@ const filteredTodos = todos.filter(todo => {
 
 ## 🎨 Styling
 
-We use a combination of Tailwind CSS and custom CSS:
+I use a combination of Tailwind CSS and custom CSS for styling:
 
 ```css
 /* Custom CSS Variables */
