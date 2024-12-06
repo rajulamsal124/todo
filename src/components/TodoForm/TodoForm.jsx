@@ -9,7 +9,10 @@ const TodoForm = ({ addTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!text.trim()) return;
-    addTodo(text, priority);
+    addTodo({
+      text: text.trim(),
+      priority
+    });
     setText('');
   };
 

@@ -48,6 +48,45 @@ npm install
 npm run dev
 ```
 
+## 🐳 Docker Setup
+
+### Prerequisites
+- Docker
+- Docker Compose
+
+### Starting MongoDB with Docker
+1. Start the MongoDB container:
+```bash
+docker-compose up -d
+```
+
+This will start:
+- MongoDB server on port 27017
+- Mongo Express (Web UI) on port 8081
+
+2. Access MongoDB:
+- Connection URI: `mongodb://admin:password123@localhost:27017/todo-app?authSource=admin`
+- Mongo Express UI: `http://localhost:8081`
+
+### Environment Setup
+1. Copy the example environment file:
+```bash
+cd server
+cp .env.example .env
+```
+
+2. Start the server:
+```bash
+npm install
+npm run dev
+```
+
+### Docker Commands
+- Start containers: `docker-compose up -d`
+- Stop containers: `docker-compose down`
+- View logs: `docker-compose logs -f`
+- Reset data: `docker-compose down -v` (removes volumes)
+
 ## 🎯 Core Features Explained
 
 ### Todo Management
